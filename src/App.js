@@ -13,8 +13,11 @@ function App() {
       <Menu />
       <About />
       <Experience />
-      <Contact />
       <Projects />
+      <Contact />
+      <footer>
+        <span>2023</span>
+      </footer>
     </div>
   );
 }

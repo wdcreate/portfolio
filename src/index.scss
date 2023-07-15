@@ -9,7 +9,7 @@ html {
   overflow-y: scroll;
   min-height: 100vh;
   max-width: 99.9%;
-  
+
   &::-webkit-scrollbar {
     width: 6px;
     background-color: transparent;
@@ -29,4 +29,32 @@ body {
   color: #fff;
   font-family: "Ysabeau Office", sans-serif;
   overflow: hidden;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  color: #fff;
+  font-weight: 900;
+}
+.swiper-pagination-bullet {
+  width: 35px !important;
+  height: 8px !important;
+  color: #000 !important;
+  background: #ff0000 !important;
+  border-radius: 0 !important;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -ms-border-radius: 0 !important;
+  -o-border-radius: 0 !important;
+}
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal{
+  bottom: 0 !important;
+}
+footer {
+  padding: 40px;
+  span {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+  }
 }

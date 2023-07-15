@@ -2,13 +2,14 @@
   margin-bottom: 7px;
   .sw-slide{
     height: auto;
-    background: #000000;
-    justify-content: center;
+    background: rgb(59, 41, 41);
+background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(9,9,121,1) 56%, rgba(255,81,0,1) 100%);    justify-content: center;
     display: flex;
     align-items: center;
     color: #525252;
     font-weight: 700;
     position: relative;
+    padding: 10px;
     a{
       position: absolute;
       bottom: 50px;
@@ -36,11 +37,17 @@
 }
   }
   .sw-projects{
-    width: 65%;
     border-radius: 50px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
+    margin-bottom: 7px;
 }
+}
+.projects-cards{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
