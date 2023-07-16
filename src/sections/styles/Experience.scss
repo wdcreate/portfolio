@@ -7,19 +7,18 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 7px;
-    &:nth-child(odd){
-      .l{
-        background: rgb(11, 32, 221); 
+    height: 350px;
+    &:nth-child(odd) {
+      .l {
+        background: rgb(11, 32, 221);
       }
-      .r{
+      .r {
         background: rgb(18, 77, 131);
-
       }
     }
     .l,
     .r {
-      min-height: 320px;
-      height: auto;
+      height: 100%;
       border-radius: 50px;
       -webkit-border-radius: 50px;
       -moz-border-radius: 50px;
@@ -29,6 +28,7 @@
       padding: 40px;
     }
     .l {
+      z-index: 10;
       display: flex;
       justify-content: center;
       align-items: center;

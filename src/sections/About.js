@@ -1,9 +1,25 @@
 import "./styles/About.scss";
+import { motion } from "framer-motion";
+const AboutAnimation = {
+  hidden: { y: 50, opacity: 0,    transition: { stiffness: 100,  },
+},
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: { stiffness: 100,  },
 
+  },
+};
 function About() {
   return (
-    <div className="about">
-      <div class="about-description">
+    <motion.div
+      viewport={{ amount: 0.2, once: true }}
+      variants={AboutAnimation}
+      initial="hidden"
+      whileInView="visible"    
+      className="about"
+    >
+      <div className="about-description">
         <p>
           I am currently a freelancer <b>Web Developer</b> on <b>Fiverr</b>,
           where I develop and maintain websites for various clients.
@@ -18,10 +34,10 @@ function About() {
         </p>
       </div>
       <div className="tech">
-        <div class="stack">
+        <div className="stack">
           Here are some technologies I have been working with:
         </div>
-        <ul class="tech-stack">
+        <ul className="tech-stack">
           <li>React JS</li>
           <li>Javascript ES6+</li>
           <li>HTML &amp; CSS</li>
@@ -35,7 +51,7 @@ function About() {
           <li>Gulp</li>
         </ul>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

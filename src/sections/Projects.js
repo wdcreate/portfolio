@@ -1,8 +1,7 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -10,7 +9,6 @@ import "swiper/css/autoplay";
 import "swiper/css/effect-fade";
 import "swiper/css/parallax";
 
-// import required modules
 import {
   Navigation,
   Pagination,
@@ -21,7 +19,17 @@ import {
 
 import "./styles/Projects.scss";
 import ProjectItem from "../components/ProjectItem";
+import { motion } from "framer-motion";
+const CarouselAnimation = {
+  hidden: { y: 50, opacity: 0,    transition: { stiffness: 100,  },
+},
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: { stiffness: 100,  },
 
+  },
+};
 function Projects() {
   const imgData = [
     {
@@ -50,8 +58,7 @@ function Projects() {
       href: "https://wdcreate.github.io/pomodoro/",
       tech: "React",
       title: "Pomodoro",
-text: 'App for time tracking.'
-
+      text: "App for time tracking.",
     },
     {
       id: 4,
@@ -102,13 +109,18 @@ text: 'App for time tracking.'
       src: require("../img/sama-main.webp"),
       href: "https://wdcreate.github.io/sama.eu-land/",
       tech: "HTML, CSS, JS",
-      title: 'Demo Team App'
+      title: "Demo Team App",
     },
   ];
 
   return (
     <div className="projects">
-      <Swiper
+      <motion.div  viewport={{ amount: 0.2, once: true }}
+      variants={CarouselAnimation}
+      initial="hidden"
+      whileInView="visible">
+
+      <Swiper 
         pagination={{
           dynamicBullets: true,
         }}
@@ -128,9 +140,10 @@ text: 'App for time tracking.'
           </SwiperSlide>
         ))}
       </Swiper>
+      </motion.div>
       <div className="projects-cards">
         {imgData.map((item) => (
-          <ProjectItem item={item} />
+          <ProjectItem item={item} key={item.id}/>
         ))}
       </div>
     </div>

@@ -1,8 +1,21 @@
 import "./styles/Contact.scss";
+import { motion } from "framer-motion";
+const ContactAnimation = {
+  hidden: { y: 50, opacity: 0,    transition: { stiffness: 100,  },
+},
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: { stiffness: 100,  },
 
+  },
+};
 function Contact() {
   return (
-    <div className="contact">
+    <motion.div viewport={{ amount: 0.2, once: true }}
+    variants={ContactAnimation}
+    initial="hidden"
+    whileInView="visible" className="contact">
       <a href="mailto:createsometh@gmail.com" className="contact-btn">Contact me!</a>
       <div className="contact-links">
         <a href="https://www.linkedin.com/in/creatinglab">
@@ -12,7 +25,7 @@ function Contact() {
           <img src={require("../img/github.png")} alt="github" />
         </a>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
