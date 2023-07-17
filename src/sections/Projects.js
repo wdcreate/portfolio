@@ -121,6 +121,7 @@ function Projects() {
       whileInView="visible">
 
       <Swiper 
+    
         pagination={{
           dynamicBullets: true,
         }}

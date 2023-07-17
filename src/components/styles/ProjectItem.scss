@@ -1,4 +1,4 @@
-.project-item{
+.project-item {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -8,43 +8,88 @@
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
   background: #38b13e;
-  width: 49.6%;
-  height: 300px;
   margin-bottom: 7px;
   padding: 50px;
   text-decoration: none;
   color: #fff;
-  .top{
+  min-height: 300px;
+  @media (max-width: 500px)  {
+padding: 30px;  }
+  .top {
     justify-content: space-between;
     align-items: center;
     display: flex;
     width: 100%;
-    span{
+    @media (max-width: 850px) and (min-width: 700px) {
+      flex-direction: column;
+    }
+    @media (max-width: 500px)  {
+      flex-direction: column;
+    }
+    span {
       display: block;
       font-size: 20px;
       font-weight: 700;
       text-transform: uppercase;
+      @media (max-width: 850px)and (min-width: 700px) {
+        text-align: center;
+      }
+      @media (max-width: 500px) {
+        text-align: center;
+      }
     }
   }
-  h6{
+  h6 {
     font-weight: 700;
     font-size: 50px;
     font-family: "VT323", monospace;
     margin: 0;
     letter-spacing: 6px;
+    @media (max-width: 850px) {
+      font-size: 40px;
+      margin-top: 20px;
+    }
+    @media (max-width: 850px) and (min-width: 700px) {
+      text-align: center;
+    }
+    @media (max-width: 500px) {
+      text-align: center;
+      margin-top: 20px;
+
+    }
   }
-  p{
+  p {
     font-size: 18px;
-margin: 0;
+    margin: 0;
+    @media (max-width: 850px) and (min-width: 700px) {
+      text-align: center;
+      margin-top: 20px;
+    }
+    @media (max-width: 500px) {
+      text-align: center;
+      margin-top: 20px;
+
+    }
   }
-  .bottom{
+  .bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    img{
+    @media (max-width: 850px) and (min-width: 700px) {
+      flex-direction: column;
+    }
+    @media (max-width: 500px) {
+      flex-direction: column;
+    }
+    img {
       width: 40px;
       height: 40px;
+      @media (max-width: 850px)and (min-width: 700px) {
+        margin-top: 20px;
+      }
+      @media (max-width: 500px) {
+        margin-top: 20px;
+      }
     }
   }
-
 }

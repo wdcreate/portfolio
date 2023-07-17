@@ -2,22 +2,21 @@ import { useState } from "react";
 import Links from "../components/Links";
 import "./styles/Menu.scss";
 import { motion } from "framer-motion";
-const textAnimation = {
+/* const textAnimation = {
   from: {
-    translateX: "100%",
+    translate: "-1000%",
     transition: { stiffness: 100, delay: 0.1 },
   },
   to: {
     transition: { stiffness: 100, delay: 0.1 },
-    translateX: "-100%",
+    translate: "1000%",
   },
-};
+}; */
 
 function Menu() {
   const [creationHover, setCreationHover] = useState(false);
   const [aboutHover, setAboutHover] = useState(false);
   const [expHover, setExpHover] = useState(false);
-
 
   return (
     <motion.div initial="from" whileInView="to" className="menu">
@@ -26,11 +25,13 @@ function Menu() {
         onMouseLeave={() => setCreationHover(false)}
         onMouseEnter={() => setCreationHover(true)}
       >
-        {creationHover ? (
-          <motion.h6  variants={textAnimation}>creating some thing</motion.h6>
-        ) : (
-          <h6>see creations</h6>
+        {!creationHover && (
+          <div className="title-wrapper">
+            <h1 className="menu-item-title">Check out my projects </h1>
+            <h1 className="menu-item-title">Check out my projects </h1>
+          </div>
         )}
+        <h6>see creations</h6>
       </div>
       <div className="menu-items">
         <div className="menu-list">
@@ -39,14 +40,30 @@ function Menu() {
             onMouseLeave={() => setAboutHover(false)}
             onMouseEnter={() => setAboutHover(true)}
           >
-            <h6>about</h6>
+            {aboutHover && (
+              <div className="title-wrapper">
+                <h1 className="menu-item-title">
+                  Find out more information about me
+                </h1>
+                <h1 className="menu-item-title">
+                  Find out more information about me{" "}
+                </h1>
+              </div>
+            )}
+            {!aboutHover && <h6>about</h6>}
           </div>
           <div
             className="menu-item exp"
             onMouseLeave={() => setExpHover(false)}
             onMouseEnter={() => setExpHover(true)}
           >
-            <h6>experience</h6>
+            {expHover && (
+              <div className="title-wrapper">
+                <h1 className="menu-item-title">More about my experience</h1>
+                <h1 className="menu-item-title">More about my experience</h1>
+              </div>
+            )}
+            {!expHover && <h6>experience</h6>}
           </div>
         </div>
         <div className="menu-item full">

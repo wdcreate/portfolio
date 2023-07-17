@@ -2,7 +2,7 @@ import "./styles/Experience.scss";
 import { motion } from "framer-motion";
 
 const RAnimation = {
-  hidden: { x: '-50% '},
+  hidden: { x: "-50% " },
   opacity: 0,
   visible: (custom) => ({
     x: 0,
@@ -11,7 +11,7 @@ const RAnimation = {
   }),
 };
 const LAnimation = {
-  hidden: { x: '50%'},
+  hidden: { x: "50%" },
   opacity: 0,
   visible: (custom) => ({
     x: 0,
@@ -20,16 +20,22 @@ const LAnimation = {
   }),
 };
 
-
 function Experience() {
   return (
     <div className="experience">
-      <motion.div custom={0} viewport={{amount: 0.3}}
+      <motion.div
+        custom={0}
+        viewport={{ amount: 0.3 }}
         initial="hidden"
         whileInView="visible"
         className="experience-item"
       >
-        <motion.div custom={1} viewport={{amount: 0.3}} variants={LAnimation} className="l">
+        <motion.div
+          custom={1}
+          viewport={{ amount: 0.3 }}
+          variants={LAnimation}
+          className="l"
+        >
           <div className="work-title">Freelance | Web developer</div>
           <p className="time">2020 - present</p>
         </motion.div>
@@ -39,8 +45,13 @@ function Experience() {
           <li>website maintenance, speed optimisation;</li>
         </motion.ul>
       </motion.div>
-      <motion.div custom={2} viewport={{amount: 0.3}} initial="hidden"
-    whileInView="visible" className="experience-item">
+      <motion.div
+        custom={2}
+        viewport={{ amount: 0.3 }}
+        initial="hidden"
+        whileInView="visible"
+        className="experience-item"
+      >
         <motion.div variants={LAnimation} className="l">
           <div className="work-title">Werbeagentur FETZ | Web developer</div>
           <p className="time">2021 - May 2023</p>
@@ -58,11 +69,15 @@ function Experience() {
             delivered responsive, cross-browser compatible and accessibility
             compliant websites, achieving faster load time;
           </li>
-          <li>website speed boost from 50 to 85+;</li>
         </motion.ul>
       </motion.div>
-      <motion.div custom={3} viewport={{amount: 0.3}} initial="hidden"
-    whileInView="visible" className="experience-item">
+      <motion.div
+        custom={3}
+        viewport={{ amount: 0.3 }}
+        initial="hidden"
+        whileInView="visible"
+        className="experience-item"
+      >
         <motion.div variants={LAnimation} className="l">
           <div className="work-title">Startup | React Web developer</div>
           <p className="time">2021 - 2022</p>
@@ -76,22 +91,24 @@ function Experience() {
           <li>active cooperation with other developers and designer;</li>
         </motion.ul>
       </motion.div>
-      <motion.div custom={4} viewport={{amount: 0.3}} initial="hidden"
-    whileInView="visible" className="experience-item">
+      <motion.div
+        custom={4}
+        viewport={{ amount: 0.3 }}
+        initial="hidden"
+        whileInView="visible"
+        className="experience-item"
+      >
         <motion.div variants={LAnimation} className="l">
           <div className="work-title">OnlineStore | Web developer</div>
           <p className="time">May 2018 - 2019</p>
         </motion.div>
         <motion.ul variants={RAnimation} className="text r">
-          <li>setting up and preparing the store for the sale of goods;</li>
           <li>changing site content from the WordPress admin area;</li>
           <li>
             creation of new pages with products and filling them with content;
           </li>
           <li>
-            produced visual elements of web applications by translating UI/UX
-            design wireframes into code while producing high quality, reusable
-            markup using HTML5 and CSS3;
+            translating UI/UX design wireframes into codeusing HTML5 and CSS3;
           </li>
         </motion.ul>
       </motion.div>

@@ -12,6 +12,8 @@
   justify-content: space-around;
   align-items: center;
   margin-bottom: 7px;
+  @media (max-width: 500px)  {
+flex-direction: column;  } 
   &-btn {
     border: 5px solid #0059ff;
     padding: 25px 50px;
@@ -42,6 +44,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    @media (max-width: 500px)  {
+  width: 100%;
+  justify-content: space-around;
+    } 
     a {
       display: flex;
       justify-content: center;
