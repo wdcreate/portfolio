@@ -12,10 +12,11 @@
   justify-content: space-around;
   align-items: center;
   margin-bottom: 7px;
-  @media (max-width: 500px)  {
-flex-direction: column;  } 
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
   &-btn {
-    border: 5px solid #0059ff;
+      border: 5px solid #a395e2;
     padding: 25px 50px;
     display: flex;
     justify-content: center;
@@ -33,10 +34,11 @@ flex-direction: column;  }
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    &:hover {
-      background: #0059ff;
-      color: #fff;
+    -o-transition: all 0.3s; 
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        background: #a395e2;
+       }
     }
   }
   &-links {
@@ -44,31 +46,34 @@ flex-direction: column;  }
     display: flex;
     justify-content: space-around;
     align-items: center;
-    @media (max-width: 500px)  {
-  width: 100%;
-  justify-content: space-around;
-    } 
+    @media (max-width: 500px) {
+      width: 100%;
+      justify-content: space-around;
+    }
     a {
       display: flex;
       justify-content: center;
       align-items: center;
       img {
-        width: 50px;
-        height: 50px;
-        transition: all .3s;
-        -webkit-transition: all .3s;
-        -moz-transition: all .3s;
-        -ms-transition: all .3s;
-        -o-transition: all .3s;
-        &:hover{
-          background: #fffb00;
-          padding: 5px;
-          border-radius: 50%;
-          -webkit-border-radius: 50%;
-          -moz-border-radius: 50%;
-          -ms-border-radius: 50%;
-          -o-border-radius: 50%;
-}
+        width: 55px;
+        height: 55px;
+        transition: all 0.3s;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        padding: 5px;
+        @media (hover: hover) and (pointer: fine) {
+          &:hover {
+            background: #ffffff;
+            padding: 0px;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+          }
+        }
       }
     }
   }

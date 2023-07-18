@@ -43,7 +43,7 @@
       }
       h6{
         @media (max-width: 500px) {
-         font-size: 27px;
+         font-size: 22px;
         }
       }
     }
@@ -74,16 +74,16 @@
   justify-content: flex-end;
   align-items: flex-start;
   transition: all 0.3s;
-  background-color: rgba(235, 252, 6, 0.8);
+background: #d35b2b;
   @media (max-width: 1000px) {
     padding: 25px;
   }
   h6 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
     margin: 0;
     @media (max-width: 1000px) {
-    font-size: 35px;
+    font-size: 27px;
     }
   }
   &.full {
@@ -102,36 +102,42 @@
       min-height: 130px;
       height: 100%;
     }
-    &:hover {
-      background: rgba(255, 255, 255, 1);
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        background: rgba(255, 255, 255, 1);
+      }
     }
   }
-
-  &:hover {
-    transform: scale(0.98);
-    -webkit-transform: scale(0.98);
-    -moz-transform: scale(0.98);
-    -ms-transform: scale(0.98);
-    -o-transform: scale(0.98);
-    background-color: rgba(235, 252, 6, 1);
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      transform: scale(0.98);
+      -webkit-transform: scale(0.98);
+      -moz-transform: scale(0.98);
+      -ms-transform: scale(0.98);
+      -o-transform: scale(0.98);
+      background-color: #ff4800;
+    }
   }
   &.exp {
-    background: rgba(0, 89, 255, 0.8);
+    background: rgba(168, 135, 199, 1);
     h6 {
       color: #fff;
     }
-    &:hover {
-      background: rgba(0, 89, 255, 1);
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        background: rgba(118, 91, 143, 1);
+      }
     }
   }
   &.ab {
-    background: rgba(83, 56, 56, 0.8);
+    background: #8BADE1;
     h6 {
       color: #fff;
     }
-
-    &:hover {
-      background: rgba(83, 56, 56, 1);
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        background: #708bb4;
+      }
     }
   }
 }

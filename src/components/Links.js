@@ -11,10 +11,12 @@ function Links() {
       <img src={require("../img/linkedin.png")} alt="Linkedin" />
       </a>
       <a href="https://github.com/wdcreate">
+
       <img src={require("../img/github.png")} alt="github" />
 
       </a>
       <a href="mailto:createsometh@gmail.com">
+
       <img src={require("../img/mail.png")} alt="email" />
       </a>
       </div>
