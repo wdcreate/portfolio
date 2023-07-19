@@ -22,7 +22,7 @@ const LAnimation = {
 
 function Experience() {
   return (
-    <div className="experience">
+    <div className="experience" id="experience">
       <motion.div
         custom={0}
         viewport={{ amount: 0.3 }}

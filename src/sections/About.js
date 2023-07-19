@@ -18,6 +18,7 @@ function About() {
       initial="hidden"
       whileInView="visible"    
       className="about"
+      id="about"
     >
       <div className="about-description">
         <p>

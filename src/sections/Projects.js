@@ -114,7 +114,7 @@ function Projects() {
   ];
 
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
       <motion.div  viewport={{ amount: 0.2, once: true }}
       variants={CarouselAnimation}
       initial="hidden"

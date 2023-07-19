@@ -1,26 +1,24 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Links from "../components/Links";
 import "./styles/Menu.scss";
 import { motion } from "framer-motion";
-/* const textAnimation = {
-  from: {
-    translate: "-1000%",
-    transition: { stiffness: 100, delay: 0.1 },
-  },
-  to: {
-    transition: { stiffness: 100, delay: 0.1 },
-    translate: "1000%",
-  },
-}; */
 
 function Menu() {
   const [creationHover, setCreationHover] = useState(false);
   const [aboutHover, setAboutHover] = useState(false);
   const [expHover, setExpHover] = useState(false);
 
+  useEffect(() => {
+    if (window.innerWidth <= 700) {
+      setExpHover(false);
+      setAboutHover(false);
+      setCreationHover(false);
+    }
+  }, [aboutHover, expHover]);
   return (
     <motion.div initial="from" whileInView="to" className="menu">
-      <div
+      <a
+        href="#projects"
         className="menu-item main"
         onMouseLeave={() => setCreationHover(false)}
         onMouseEnter={() => setCreationHover(true)}
@@ -32,10 +30,11 @@ function Menu() {
           </div>
         )}
         <h6>see creations</h6>
-      </div>
+      </a>
       <div className="menu-items">
         <div className="menu-list">
-          <div
+          <a
+            href="#about"
             className="menu-item ab"
             onMouseLeave={() => setAboutHover(false)}
             onMouseEnter={() => setAboutHover(true)}
@@ -51,8 +50,9 @@ function Menu() {
               </div>
             )}
             {!aboutHover && <h6>about</h6>}
-          </div>
-          <div
+          </a>
+          <a
+            href="#experience"
             className="menu-item exp"
             onMouseLeave={() => setExpHover(false)}
             onMouseEnter={() => setExpHover(true)}
@@ -64,7 +64,7 @@ function Menu() {
               </div>
             )}
             {!expHover && <h6>experience</h6>}
-          </div>
+          </a>
         </div>
         <div className="menu-item full">
           <Links />
