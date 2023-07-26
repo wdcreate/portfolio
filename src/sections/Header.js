@@ -6,7 +6,7 @@ function Header() {
       <h1>
         hi,<span>Vlad</span> here
       </h1>
-      <h4>I create somethings</h4>
+      <h4>I create stuff</h4>
     </header>
   );
 }
