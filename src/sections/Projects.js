@@ -1,14 +1,11 @@
 import React from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import "swiper/css/effect-fade";
 import "swiper/css/parallax";
-
 import {
   Navigation,
   Pagination,
@@ -66,46 +63,44 @@ function Projects() {
       href: "https://wdcreate.github.io/bank-land/",
       tech: "HTML, CSS, JS",
       title: "Demo Banking App",
-      text: "Demonstrating banking application.",
     },
     {
-      id: 6,
+      id: 5,
       src: require("../img/fin-main.webp"),
       href: "https://wdcreate.github.io/finance-land/",
       tech: "HTML, CSS, JS",
       title: "Demo Finance Platform",
     },
     {
-      id: 7,
+      id: 6,
       src: require("../img/game-main.webp"),
       href: "https://wdcreate.github.io/game-land/",
       tech: "HTML, CSS, JS",
       title: "Demo Game Website",
-      text: "Demonstrating game.",
     },
     {
-      id: 8,
+      id: 7,
       src: require("../img/q-main.webp"),
       href: "https://wdcreate.github.io/qubit-land/",
       tech: "HTML, CSS, JS",
       title: "Demo E-commerce Platform",
     },
     {
-      id: 9,
+      id: 8,
       src: require("../img/rob-main.webp"),
       href: "https://wdcreate.github.io/robinhood-land/",
       tech: "HTML, CSS, JS",
       title: "Demo Banking App",
     },
     {
-      id: 10,
+      id: 9,
       src: require("../img/room-main.webp"),
       href: "https://wdcreate.github.io/roomdes_land/",
       tech: "HTML, CSS, JS",
       title: "Demo Design Bureau",
     },
     {
-      id: 11,
+      id: 10,
       src: require("../img/sama-main.webp"),
       href: "https://wdcreate.github.io/sama.eu-land/",
       tech: "HTML, CSS, JS",
@@ -150,5 +145,4 @@ function Projects() {
     </div>
   );
 }
-
 export default Projects;
