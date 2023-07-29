@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "./static/css/main.fced70bd.css",
+    "main.js": "./static/js/main.708b731c.js",
+    "static/media/pomodoro.webp": "./static/media/pomodoro.9f35a108055d3eb12861.webp",
+    "static/media/game-main.webp": "./static/media/game-main.b98b357d22517cc561c2.webp",
+    "static/media/q-main.webp": "./static/media/q-main.5ec9bf8d377ba92f1014.webp",
+    "static/media/rob-main.webp": "./static/media/rob-main.6506c74b63ca37ec9ffa.webp",
+    "static/media/fin-main.webp": "./static/media/fin-main.9c482c71a7bd092569d3.webp",
+    "static/media/sama-main.webp": "./static/media/sama-main.527ebb3135706c1e1fd9.webp",
+    "static/media/room-main.webp": "./static/media/room-main.60adeecdcc9d3758f046.webp",
+    "static/media/bank-main.webp": "./static/media/bank-main.a5f2b00dc98ab8c610d1.webp",
+    "static/media/link.png": "./static/media/link.c02426a96923ffd3b325.png",
+    "static/media/accounter.webp": "./static/media/accounter.92241cad65e87f751b72.webp",
+    "static/media/memorize.webp": "./static/media/memorize.c6e079d9f58a319d4df9.webp",
+    "index.html": "./index.html",
+    "main.fced70bd.css.map": "./static/css/main.fced70bd.css.map",
+    "main.708b731c.js.map": "./static/js/main.708b731c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fced70bd.css",
+    "static/js/main.708b731c.js"
+  ]
+}
