@@ -40,7 +40,7 @@ function About() {
         </div>
         <ul className="tech-stack">
           <li>React JS</li>
-          <li>Javascript ES6+</li>
+          <li>Javascript</li>
           <li>HTML &amp; CSS</li>
           <li>JS libraries</li>
           <li>CSS libraries</li>
@@ -49,7 +49,6 @@ function About() {
           <li>Git</li>
           <li>Wordpress</li>
           <li>Wix</li>
-          <li>Gulp</li>
         </ul>
       </div>
     </motion.div>
