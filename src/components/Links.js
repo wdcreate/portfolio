@@ -7,7 +7,7 @@ function Links() {
       <h5>Contact me</h5>
       <div className="links-inner">
 
-      <a href="https://www.linkedin.com/in/creatinglab">
+      <a href="https://www.linkedin.com/in/polshchykow">
       <img src={require("../img/linkedin.png")} alt="Linkedin" />
       </a>
       <a href="https://github.com/wdcreate">
