@@ -41,6 +41,7 @@ function About() {
         <ul className="tech-stack">
           <li>React JS</li>
           <li>Javascript</li>
+          <li>Typescript</li>
           <li>HTML &amp; CSS</li>
           <li>JS libraries</li>
           <li>CSS libraries</li>
